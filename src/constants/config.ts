@@ -1,6 +1,6 @@
 export const config = {
-  siteName: 'Bingo',
-  title: 'Bingo',
+  siteName: 'Dedic8edSoft',
+  title: 'Dedic8edSoft',
   description: '',
   locale: 'en',
   baseUrl: process.env.baseUrl,

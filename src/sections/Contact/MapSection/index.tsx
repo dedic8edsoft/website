@@ -9,7 +9,7 @@ const MapSection = () => {
         data-latitude="40.712776"
         data-longitude="-74.005974"
         data-marker="images/marker.png"
-        data-marker-name="Bingo"
+        data-marker-name="Dedic8edSoft"
       ></div>
       <iframe
         className="w-full h-full"
