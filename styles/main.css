@@ -1,0 +1,23 @@
+@import url("~react-responsive-carousel/lib/styles/carousel.min.css");
+@import url("~react-toastify/dist/ReactToastify.css");
+
+@import "core";
+@import "components";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+  }
+}

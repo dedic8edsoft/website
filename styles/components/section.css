@@ -1,0 +1,96 @@
+.section-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.section-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  position: relative;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section-description {
+  position: relative;
+  font-size: 16px;
+  color: #848484;
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto 25px;
+  line-height: 1.5;
+}
+
+.section-description::after {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  content: '';
+  height: 2px;
+  width: 80px;
+  background: #dee2e6;
+}
+
+.bordered-icon::before {
+  content: "";
+  background: #dadada;
+  width: 50px;
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(15px);
+  position: absolute;
+}
+
+.bordered-icon::after {
+  content: "";
+  background: #dadada;
+  width: 50px;
+  height: 1px;
+  top: 50%;
+  right: 50%;
+  transform: translateX(-15px);
+  position: absolute;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .section-content {
+    max-width: 750px
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-content {
+    max-width: 970px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-content {
+    max-width: 1170px;
+  }
+}
+
+.team-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 145px;
+  background: white;
+}

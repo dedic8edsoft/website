@@ -1,0 +1,8 @@
+.slick-slider .slick-arrow {
+    width: unset;
+    height: unset;
+}
+
+.slick-slider .slick-arrow::before {
+    display: none;
+}

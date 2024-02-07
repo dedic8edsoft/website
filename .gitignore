@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# IDE
+.idea
+
+# Environment variable
+.env
+
+# Cache
+.next
+
+# Firebase
+.firebase*
+firebase.json
+
+# Build
+out
+dist
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
+
+# yarn
+yarn-error.log

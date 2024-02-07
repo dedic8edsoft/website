@@ -1,0 +1,87 @@
+.heading-h2 {
+  font-size: 75px;
+  font-weight: 900;
+  letter-spacing: -4px;
+  padding: 20px 0;
+  line-height: 1;
+}
+
+.heading-h4 {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px 0;
+  letter-spacing: -0.7px;
+}
+
+.text-body {
+  padding: 15px 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.text-description {
+  padding: 20px 0;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1199px) {
+  .heading-h2 {
+    font-size: 52px;
+    letter-spacing: -2px;
+  }
+
+  .heading-h4 {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+
+  .text-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+
+  .text-body {
+    line-height: 28px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading-h2 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .heading-h4 {
+    padding: 15px 0;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+
+  .text-description {
+    padding: 15px 0;
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .text-body {
+    line-height: 23px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .heading-h2 {
+    font-size: 38px;
+  }
+
+  .heading-h4 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
