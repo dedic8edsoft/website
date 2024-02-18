@@ -15,7 +15,7 @@ const MapSection = () => {
         className="w-full h-full"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed?origin=mfe&pb=!1m4!2m1!1sPere+Segedinca+17,+Kikinda,+Serbia!5e0!6i10,6z"
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d185.1022395317401!2d19.515583977463297!3d42.07242457167203!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1708273578948!5m2!1sen!2suk"
         allowFullScreen
       ></iframe>
     </div>

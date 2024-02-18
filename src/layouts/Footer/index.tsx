@@ -18,7 +18,7 @@ export const Footer = () => {
             <div className="col-span-1 md:col-span-3">
               <h4 className="uppercase text-white mb-5">Our Services</h4>
               <div className="flex flex-col gap-3 text-13 text-gray-600">
-                <Link href="#">Ui/Ux Design</Link>
+                <Link href="#">UI/UX Design</Link>
                 <Link href="#">Graphic Design</Link>
                 <Link href="#">Web Design</Link>
                 <Link href="#">Web Development</Link>

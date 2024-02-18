@@ -12,7 +12,7 @@ const ContactPage = () => {
         <div className="team-page pb-0">
           <TopBanner title="Contact Us" />
           <ContactFormSection />
-          {/* <MapSection /> */}
+          <MapSection />
         </div>
       </div>
     </FullLayout>

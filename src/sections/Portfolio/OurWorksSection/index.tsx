@@ -29,35 +29,36 @@ const categories = [
 const data = [
   {
     cats: ['ALL', 'DESIGN'],
-    image: '/assets/images/portfolio/portfolio-1.jpg',
+    image: '/assets/images/portfolio/portfolio-1.png',
+    title: 'Softwear',
   },
   {
     cats: ['ALL', 'DESIGN'],
-    image: '/assets/images/portfolio/portfolio-2.jpg',
+    image: '/assets/images/portfolio/portfolio-2.png',
+    title: 'Capte',
   },
   {
     cats: ['ALL', 'DEVELOPMENT'],
-    image: '/assets/images/portfolio/portfolio-3.jpg',
+    image: '/assets/images/portfolio/portfolio-3.png',
+    title: 'Singleton',
   },
   {
     cats: ['ALL', 'DEVELOPMENT'],
-    image: '/assets/images/portfolio/portfolio-4.jpg',
+    image: '/assets/images/portfolio/portfolio-4.png',
+    title: 'Ignition Risk Management',
+    backgroundPosition: 'center',
   },
   {
     cats: ['ALL', 'DESIGN'],
-    image: '/assets/images/portfolio/portfolio-5.jpg',
+    image: '/assets/images/portfolio/portfolio-5.png',
+    title: 'Autohaus',
+    backgroundPosition: 'center',
   },
   {
     cats: ['ALL', 'DEVELOPMENT', 'DESIGN'],
-    image: '/assets/images/portfolio/portfolio-6.jpg',
-  },
-  {
-    cats: ['ALL', 'DESIGN'],
-    image: '/assets/images/portfolio/portfolio-7.jpg',
-  },
-  {
-    cats: ['ALL', 'DEVELOPMENT', 'DESIGN'],
-    image: '/assets/images/portfolio/portfolio-8.jpg',
+    image: '/assets/images/portfolio/portfolio-6.png',
+    title: 'Imajing',
+    backgroundPosition: 'center',
   },
 ];
 
@@ -69,11 +70,13 @@ const OurWorksSection = () => {
       <div className="container mx-auto">
         <h1 className="section-title">Our Works</h1>
         <p className="section-description">
-          Explore a showcase of our proudest achievements and projects, where we exemplify our commitment to excellence, creativity, and innovation across diverse industries, leaving a lasting mark on every endeavor.
+          Explore a showcase of our proudest achievements and projects, where we exemplify our
+          commitment to excellence, creativity, and innovation across diverse industries, leaving a
+          lasting mark on every endeavor.
         </p>
       </div>
       <div className="pt-20">
-        <div className="flex justify-center gap-3 flex-wrap">
+        {/* <div className="flex justify-center gap-3 flex-wrap">
           {categories.map((cat) => (
             <Button
               key={cat.value}
@@ -83,23 +86,27 @@ const OurWorksSection = () => {
               {cat.label}
             </Button>
           ))}
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-10 px-6">
+        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-10 px-6">
           {data
             .filter((item) => item.cats.includes(selectedCat))
             .map((item, index) => (
               <div
                 key={index}
-                className="w-full h-full aspect-square group bg-contain"
-                style={{ backgroundImage: `url(${item.image})` }}
+                className="w-full h-full group bg-cover"
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                  backgroundPosition: item.backgroundPosition || 'initial',
+                  height: 400,
+                }}
               >
                 <div className="relative w-full h-full flex-center opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
                   <div className="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-60 z-0" />
                   <div className="flex flex-col items-center z-10">
-                    <div className="w-11 h-11 flex-center bg-primary rounded-full mb-3">
+                    {/* <div className="w-11 h-11 flex-center bg-primary rounded-full mb-3">
                       <SearchIcon className="text-white" />
-                    </div>
-                    <h5 className="text-white text-16 font-semibold">AirBnb Postcard</h5>
+                    </div> */}
+                    <h5 className="text-white text-32 font-semibold">{item.title}</h5>
                   </div>
                 </div>
               </div>
