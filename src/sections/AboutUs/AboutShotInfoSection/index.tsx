@@ -7,8 +7,8 @@ const AboutShotInfoSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="">
             <h2 className="text-32 font-bold leading-tight mb-4">
-              We create designs
-              <br /> and technology
+              We Create Designs
+              <br /> and Technology
             </h2>
             <p className="text-gray-500">
               We seamlessly blend cutting-edge technology with captivating designs, ensuring that
